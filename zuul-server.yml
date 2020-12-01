@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zuul-server
+  cloud:
+   loadbalancer:
+     ribbon:
+       enabled: false
+server:
+  port: 8766
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
